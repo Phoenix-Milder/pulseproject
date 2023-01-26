@@ -1,4 +1,91 @@
+@media (max-width: 1200px){
+    .container{
+        max-width: 900px;
+    }
+}
+@media (max-width: 991px){
+    .container{
+        max-width: 720px;
+    }
+}
+@media (max-width: 767px){
+    .container{
+        width: 540px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        &__wrapper{
+            margin-top: 20px;   
+            width:  80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .promo{
+        &__icons{
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__wrapper{
+            align-items: center;
+        }
+    }
+    .advantages{
+        padding: 25px 0;
+        &__wrapper{
+            flex-direction: column;
+            margin-top: 20px
+        }
+        &__item{
+            flex-direction: row;
+            max-width: 100%;
+            justify-content: space-around;
+            margin-top: 20px;
+            padding-top: 10px;
+            &:nth-child(2){
+                border-top: 1px solid $main-color;
+            }
+            &:nth-child(3){
+                border-top: 1px solid $main-color;
+            }
+        }
+        &__subtitle{
+            margin: 0 auto;
+            font-size: 17px;
+            width: 33%;
+        }
+        &__descr{
+            margin: 0 auto;
+            width: 50%;
+        }
+    }
+    .consultation{
+        min-height: 300px;
+        &__descr{
+             text-align: center;
+             font-size: 18px;
+             line-height: 20px;
+        }
+    }
+    .feed-form{
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .title{
+        font-size: 25px;
+        &_left{
+            text-align: center;
+            font-size: 20px;
+            line-height: 23px;
+        }
+    }
+}
 @media(max-width: 575px) {
+    .container{
+        width: auto;
+    }
     .header{
         display: flex;
         flex-direction: column;
@@ -6,14 +93,25 @@
             display: block;
             width: 300px;
         }
+        &__wrapper{
+            width: 100%;
+        }
         &__official{
             margin-top: 20px;
-            display: none;
+            font-size: 12px;
+            text-align: left;
+            span{
+                font-size: 15px;
+            }
         }
         &__contacts{
             display: flex;
             justify-content: space-around;
             margin-top: 25px; 
+            align-items: center;
+        }
+        &__phone{
+            font-size: 14px;
         }
     }
     .promo{
@@ -23,20 +121,34 @@
             align-items: center;
         }
         &__header{
-            font-size: 27px;
+            font-size: 22px;
             text-align: center;
         }
         &__subheader{
-            font-size: 20px;
+            font-size: 17px;
             text-align: center;
         }
         &__icons{
             width: 90%;
             margin-top: 30px;
         }
+        &__icon{
+            font-size: 12px;
+        }
+        &__link{
+            margin-top: 10px;
+        }
     }
     .title{
         font-size: 22px;
+        br{
+            display: none;
+        }
+        &_left{
+            font-size: 18px;
+            line-height: 24px;
+            text-align: center;
+        }
     }
     .advantages{
         padding: 30px 0 25px 0;
@@ -48,6 +160,14 @@
         }
         &__item{
             margin-top: 15px;
+            border-top: none;
+            flex-direction: column;
+            &:nth-child(2){
+                border-top: none;
+            }
+            &:nth-child(3){
+                border-top: none;
+            }
         }
         &__subtitle{
             margin-top: 10px;
@@ -57,5 +177,20 @@
             margin-top: 10px;
             font-size: 13px;
         }
+    }
+    .consultation{
+        padding: 25px 0;
+        min-height: 400px;
+        br{
+            display: none;
+        }
+        &__descr{
+            font-size: 16px;
+            text-align: center;
+        }
+    }
+    .feed-form{
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }

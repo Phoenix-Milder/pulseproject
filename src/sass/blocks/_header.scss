@@ -2,6 +2,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+    }
     &__logo{
         width: 250px;
         img{
@@ -13,6 +18,7 @@
         font-weight: 500;
         font-size: 12px;
         text-align: center;
+        margin-top: 10px;
         span{
             display: block;
             font-size: 18px;
