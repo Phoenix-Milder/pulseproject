@@ -16,7 +16,8 @@
     "gulp-cli": "^2.3.0",
     "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
-    "sass": "^1.57.1"
+    "sass": "^1.57.1",
+    "tiny-slider": "^2.9.4"
   },
   "browserslist": [
     "defaults and supports es6-module",

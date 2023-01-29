@@ -1,0 +1,41 @@
+@media (max-width: 991px){
+
+}
+@media (max-width: 767px){
+    .promo{
+        &__icons{
+            margin: 0 auto;
+            margin-top: 30px;
+        }
+        &__wrapper{
+            align-items: center;
+        }
+    }
+}
+@media(max-width: 575px) {
+    .promo{
+        max-height: 380px;
+        &__wrapper{
+            margin-top: 40px;
+            align-items: center;
+        }
+        &__header{
+            font-size: 22px;
+            text-align: center;
+        }
+        &__subheader{
+            font-size: 17px;
+            text-align: center;
+        }
+        &__icons{
+            width: 90%;
+            margin-top: 30px;
+        }
+        &__icon{
+            font-size: 12px;
+        }
+        &__link{
+            margin-top: 10px;
+        }
+    }
+}
